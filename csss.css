@@ -1,0 +1,201 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
+#about-container{
+    flex: 1.4;
+    padding: 2rem 4rem;
+}
+#brand{
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+
+}
+#brand img{
+    height: 50px;
+    margin-right: 0.6rem;
+}
+#exclusive{
+    text-transform: uppercase;
+    color: gray;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+#about-container h2{
+    font-size: 2.4rem;
+   max-width: 500px;
+   margin-bottom: 1rem;
+
+}
+#date{
+    text-transform: uppercase;
+    color: #aaa;
+    margin-bottom: 1rem;
+
+}
+#descrption {
+    max-width: 500px;
+    margin-bottom: 1rem;
+    line-height: 1.4rem;
+
+}
+#about-container h4{
+    font-size:1.4rem ;
+    margin-bottom: 1rem;
+       
+}
+#users-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.user-card{
+    border: 2px solid #ccc;
+    padding: 1rem;
+    max-width: 180px;
+    text-align: center;
+}
+.user-card img{
+    width: 120px;
+    border-radius:50% ;
+    margin-bottom: 1rem;
+}
+.user-name{
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+}
+.user-role{
+    font-size: 0.9rem;
+    color: #aaa;
+}
+#form-container{
+    background-image: url("img/pattern.png");
+    background-size: cover;
+    color: white;
+    flex: 1;
+}
+#form-inner{
+    margin: 3rem;
+    padding: 3rem;
+    border: 2px solid white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#form-inner h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+
+}
+#form-inner p{
+    margin-bottom:1rem ;
+}
+#register-form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+#name-container{
+    display: flex;
+    gap: 0.5rem;
+}
+#register-form input{
+    margin: 0.2rem 0.2rem 0rem;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 10px 10px 10px;
+}
+#email{
+    max-width: 100%;
+
+}
+#register-form input[type='submit']{
+    background-color: transparent;
+    font: bold 1.1rem;
+    border: 2px solid blue;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#register-form input[type='submit']:hover{
+    background-color: white;
+    color: #0075ff;
+
+}
+#benefits{
+    text-align: left;
+    align-self: start;
+
+}
+#benefits h1{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+
+}
+#benefits ul{
+    list-style-position:inside;
+}
+#benefits ul li{
+    margin: 0.25rem 0rem;
+}
+@media(max-width: 450px){
+
+    .user-card img{
+        
+        width: 200px;
+        border-radius:50% ;
+        margin-bottom: 1rem;
+    }
+
+
+#users-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+ 
+#about-container h4{
+    text-align: center;
+    font-size:1.4rem ;
+    margin-bottom: 1rem;
+       
+ }
+  #form-container{
+    max-width: 425px;
+
+  }
+  #register-form input{
+   margin: 0.5rem 0.05rem;
+   border: none;
+   border-radius: 3px;
+  }
+  .user-card{
+    border: 2px solid #ccc;
+    padding: 1rem;
+    max-width: 240px;
+    text-align: center;
+}
+
+#name-container{
+    display: flex;
+    gap: 0.5rem;
+    width: 10px;
+}
+#name-container input[type='text']{
+margin: auto;
+width: 6rem;
+}
+
+}
